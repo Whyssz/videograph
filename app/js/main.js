@@ -1,4 +1,81 @@
 $(function () {
+    function swiperOne(){
+        let swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + (index + 1) + '</span>';
+                },
+            },
+        });
+    }
+    swiperOne();
+    function swiperTwo(){
+        let swiper = new Swiper('.swiper-container2', {
+            slidesPerView: 3,
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination2',
+                clickable: true,
+            },
+        });
+    }
+    swiperTwo();
+
+    $('[data-fancybox]').fancybox({
+        youtube : {
+            controls : 0,
+            showinfo : 0
+        },
+        vimeo : {
+            color : 'f00'
+        },
+        keyboard: true
+    });
+    // $('.benchmarks-item__num').each(function () {
+    //     $(this).prop('Counter', 0).animate({
+    //         Counter: $(this).data('value')
+    //     }, {
+    //         duration: 4000,
+    //         easing: 'swing',
+    //         step: function (now) {
+    //             $(this).text(Math.ceil(this.Counter));
+    //         }
+    //     });
+    // });
+    function scrollEvent() {
+        let hT = $('.benchmarks__inner').offset().top,
+            hH = $('.benchmarks-item').outerHeight(),
+            wH = $(window).height(),
+            wS = $(this).scrollTop();
+        if (wS > (hT+hH-wH)){
+            $('.benchmarks-item__num').each(function () {
+                $(this).prop('Counter',0).animate({
+                    Counter: $(this).data('value')
+                }, {
+                    duration: 4000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+
+            });
+        }
+    }
+    window.addEventListener("scroll", scrollEvent);
 
 
 

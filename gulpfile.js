@@ -20,8 +20,8 @@ gulp.task('sass',  () =>  {
 gulp.task('style', () => {
     return gulp.src([
         'node_modules/normalize.css/normalize.css',
-        'node_modules/slick-carousel/slick/slick.css',
         'node_modules/swiper/swiper-bundle.css',
+        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
         'node_modules/magnific-popup/dist/magnific-popup.css'
     ])
         .pipe(concat('libs.min.css'))
@@ -30,8 +30,8 @@ gulp.task('style', () => {
 })
 gulp.task('script', () => {
     return gulp.src([
-        'node_modules/slick-carousel/slick/slick.js',
         'node_modules/swiper/swiper-bundle.js',
+        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
         'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
     ])
         .pipe(concat('libs.min.js'))
