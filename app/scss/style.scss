@@ -256,7 +256,7 @@
   justify-content: space-between;
   position: absolute;
   right: -13px;
-  transform: translateX(800px);
+  transform: translateX(-600px);
   @include f400;
   opacity: 1;
   transition: all .7s ease-out;
@@ -529,17 +529,16 @@
   }
   .a-btn{
     position: absolute;
-    bottom: 72px;
-    right: 131px;
+    bottom: 0;
+    right: 0;
     &:hover:before{
       width: 100%;
-
     }
   }
 }
 .team__inner{
   display: flex;
-
+  position: relative;
 }
 .team-item{
   height: 390px;
