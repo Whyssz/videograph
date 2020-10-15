@@ -33,6 +33,22 @@ $(function () {
         });
     }
     swiperTwo();
+    function swiperTree(){
+        let swiper = new Swiper('.swiper-container3', {
+            slidesPerView: 3,
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination2',
+                clickable: true,
+            },
+        });
+    }
+    swiperTree();
 
     $('[data-fancybox]').fancybox({
         youtube : {
