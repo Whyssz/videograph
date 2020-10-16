@@ -22,6 +22,7 @@ gulp.task('style', () => {
         'node_modules/normalize.css/normalize.css',
         'node_modules/swiper/swiper-bundle.css',
         'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
+        'node_modules/animate.css/animate.css',
         'node_modules/magnific-popup/dist/magnific-popup.css'
     ])
         .pipe(concat('libs.min.css'))
@@ -33,6 +34,7 @@ gulp.task('script', () => {
         'node_modules/swiper/swiper-bundle.js',
         'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
         'node_modules/mixitup/dist/mixitup.js',
+        'node_modules/wow.js/dist/wow.js',
         'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
     ])
         .pipe(concat('libs.min.js'))

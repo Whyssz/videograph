@@ -1,4 +1,12 @@
 $(function () {
+    document.body.onload = ()  => {
+        setTimeout( () =>  {
+            let preloader = document.getElementById('preloader-loader')
+            if ( !preloader.classList.contains('done')){
+                preloader.classList.add('done')
+            }
+        }, 300)
+    }
     function swiperOne(){
         let swiper = new Swiper('.swiper-container', {
             direction: 'vertical',
@@ -180,15 +188,6 @@ $(function () {
     //     })
     // }
     // backToTop();
-
-    // document.body.onload = ()  => {
-    //     setTimeout( () =>  {
-    //         let preloader = document.getElementById('preloader-loader')
-    //         if ( !preloader.classList.contains('done')){
-    //             preloader.classList.add('done')
-    //         }
-    //     }, 300)
-    // }
 
     // $('.icon-th-list').on('click', function () {
     //     $('.product__item').addClass('list')

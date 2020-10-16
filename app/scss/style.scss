@@ -1255,6 +1255,39 @@
     transition: all .5s ease-out;
   }
 }
+.preloader{
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+  transition: all .3s ease-out;
+  &.done{
+    opacity: 0;
+    visibility: hidden;
+  }
+  .loader{
+    @include lt;
+    border-radius: 60px;
+    width: 40px;
+    height: 40px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    animation: .6s spin infinite linear;
+  }
+  @keyframes spin {
+    from{
+      transform: translate(-50%,-50%) rotate(0deg);
+      border-color: #9F78FF;
+    }
+    to{
+      transform: translate(-50%,-50%) rotate(360deg);
+      border-color: #b35705;
+    }
+  }
+}
 
 
 @import "media";
