@@ -32,6 +32,7 @@ gulp.task('script', () => {
     return gulp.src([
         'node_modules/swiper/swiper-bundle.js',
         'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
+        'node_modules/mixitup/dist/mixitup.js',
         'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
     ])
         .pipe(concat('libs.min.js'))

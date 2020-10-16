@@ -13,17 +13,17 @@
 <body>
     <div class="wrapper">
         <div class="content">
-            <header class="header" style="background-image: url(images/team/team-bg.jpg)">
+            <header class="header other-page" style="background-image: url(images/team/team-bg.jpg)">
                 <div class="header__head">
                     <div class="container">
                         <div class="header__head-inner">
                             <nav class="header-menu">
                                 <ul class="header-list">
-                                    <li><a class="header-list__link link-on" href="#">Home</a></li>
+                                    <li><a class="header-list__link" href="#">Home</a></li>
                                     <li><a class="header-list__link" href="#">about</a></li>
                                     <li><a class="header-list__link" href="#">portfolio</a></li>
                                     <li><a class="header-list__link" href="#">services</a></li>
-                                    <li><a class="header-list__link" href="#">contact</a></li>
+                                    <li><a class="header-list__link link-on" href="#">contact</a></li>
                                     <li class="header-down"><span class="header-list__link">Pages</span>
                                         <ul class="drop-down__list">
                                             <li><a href="#">Home</a></li>
@@ -48,8 +48,59 @@
                         </div>
                     </div>
                 </div>
+                <div class="breadcrumbs">
+                    <div class="breadcrumbs-title">Contact Us</div>
+                    <ul class="breadcrumbs-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
             </header>
-
+            <section class="contact-markers">
+                <div class="container">
+                    <div class="contact-head">
+                        <a class="contact-item" target="_blank" href="https://www.google.com/maps/place/%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA,+%D0%A1%D0%A8%D0%90/@40.7071532,-73.9384428,11.25z/data=!4m5!3m4!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728">
+                            <div class="contact-item__marker icon-map-marker"></div>
+                            <div class="contact-item__info">Address<span>Los Angeles Gournadi, 1230 Bariasl</span></div>
+                        </a>
+                        <a class="contact-item" href="tel:167712444227">
+                            <div class="contact-item__marker icon-phone"></div>
+                            <div class="contact-item__info">Hostine<span>1-677-124-44227 • 1-688-356-66889</span></div>
+                        </a>
+                        <a class="contact-item" href="mailto:Support@gmail.com">
+                            <div class="contact-item__marker icon-envelope-o"></div>
+                            <div class="contact-item__info">Email<span>Support@gmail.com</span></div>
+                        </a>
+                    </div>
+                    <div class="contact-bottom">
+                        <div class="contact-bottom__map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d193567.578838358!2d-73.9384428!3d40.7071532!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!5e0!3m2!1sru!2sru!4v1602856246824!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        <div class="contact-bottom__form">
+                            <div class="contact-form__title">GET IN TOUCH</div>
+                            <form>
+                                <div class="form-block">
+                                    <label>Name</label>
+                                    <input class="userInput" type="text" required>
+                                </div>
+                                <div class="form-block">
+                                    <label>Email</label>
+                                    <input class="userInput" type="email" required>
+                                </div>
+                                <div class="form-block">
+                                    <label>Your Phone</label>
+                                    <input class="userInput" type="phone" pattern="/d+" required>
+                                </div>
+                                <div class="form-block">
+                                    <label>Message</label>
+                                    <textarea class="userInput" required></textarea>
+                                </div>
+                                <button type="submit">send message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </div>
         <footer class="footer">
