@@ -49,6 +49,19 @@ $(function () {
         });
     }
     swiperTree();
+    function swiperFour(){
+        let swiper = new Swiper('.swiper-container4', {
+            slidesPerView: 6,
+            loop: true,
+            freeMode: true,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+        });
+    }
+    swiperFour();
 
     $('[data-fancybox]').fancybox({
         youtube : {
